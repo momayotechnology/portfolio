@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Momayo Technology Official Website Repository
 
-## Getting Started
+This is the GitHub repository for the official website of Momayo Technology.
 
-First, run the development server:
+## Introduction
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This repository hosts the source code for the official website of Momayo Technology. Momayo Technology is a reputable technology company specializing in a variety of services including Learning Management Software, Library Management Software, Account Management Software, Student Management Information System Portfolio, Fee Management Collection System, HR Management System, Asset and Inventory Management, Biometric Performance Payroll System, PhD/MPhil Management System, IT consulting for universities, Library Management System - eLibrary, Student Real-Time Management, Integration of Microsoft Office 365 and Google platforms to the university.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technology Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The website is built using the following technologies:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Next.js**: Next.js is a React framework that enables server-side rendering and other powerful features for building web applications.
+- **TailwindCSS**: TailwindCSS is a utility-first CSS framework that provides highly customizable and low-level utility classes to build designs quickly.
 
-## Learn More
+## Purpose
 
-To learn more about Next.js, take a look at the following resources:
+This website serves as the digital front for Momayo Technology, providing visitors with information about the company's services, products, and offerings. It also serves as a platform for potential clients and partners to learn more about Momayo Technology and get in touch.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contribution
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+We welcome contributions from the community to improve the Momayo Technology website. Whether it's fixing bugs, adding new features, or enhancing the design, contributions are highly appreciated. To contribute, please fork the repository, make your changes, and submit a pull request.
 
-## Deploy on Vercel
+## Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For any inquiries or assistance regarding the Momayo Technology website or services, please feel free to contact us at [contact@momayotech.com](mailto:contact@momayotech.com).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Thank you for visiting our repository!
+
+Momayo Technology Team
