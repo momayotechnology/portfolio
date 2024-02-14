@@ -6,7 +6,7 @@ export default function Home() {
     <>
       {/* Navbar */}
 
-      <main className="flex flex-col items-center justify-center max-w-8xl">
+      <main className="flex flex-col items-center justify-center max-w-7xl mx-auto">
         <Hero />
       </main>
 
