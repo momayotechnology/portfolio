@@ -58,7 +58,7 @@ const footer = () => {
 
               <p className="text-gray-500">
                 Momayo Technology has provided tech services in Nepal since
-                2016. What started as a small company has grown into a
+                2017. What started as a small company has grown into a
                 full-fledged IT company that provides a wide range of services
                 for higher education institutions.
               </p>

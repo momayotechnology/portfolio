@@ -9,7 +9,7 @@ const Hero = () => {
     <section className="min-h-[calc(100vh-100px)] flex items-center justify-center p-2">
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-[58px] font-semibold leading-[62px] lg:max-w-xl">
+          <h1 className="text-[62px] font-semibold leading-[66px] lg:max-w-xl">
             Momayo Tech
             <br />
             Makes Learning <br />
@@ -25,20 +25,20 @@ const Hero = () => {
                 1500,
               ]}
               wrapper="span"
-              speed={30}
+              speed={25}
               style={{ display: "inline-block" }}
               className="text-[#2D763A]"
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[22px] leading-[26px] mt-6">
+          <p className="text-[20px] leading-[24px] mt-6">
             Momayo Technology is an Independent Software Company that provides
             you different IT services as per your requirement. We provide
             different services including Software and Application Development,
             ICT Consultancy Service and all other ICT related Solution.
           </p>
 
-          <button className="text-[#2D763A] font-[500] hover:opacity-[.95] transition duration-300 py-3 rounded-md mt-4 flex items-center">
+          <button className="text-[#2D763A] text-[18px] hover:text-[#333] uppercase font-[600] hover:opacity-[.95] transition duration-300 py-3 rounded-md mt-4 flex items-center">
             Explore Our Services
             <FiChevronDown className="ml-1" />
           </button>
