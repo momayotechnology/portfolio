@@ -4,9 +4,16 @@ const Customers = () => {
   return (
     <section className="bg-white w-full">
       <div className="py-8 lg:py-16 mx-auto max-w-7xl px-4">
-        <h2 className="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900:text-4xl">
-          Momayo's services are loved by
+        <h2 className="mb-4 text-[54px] font-extrabold tracking-tight leading-tight text-center text-gray-900:text-4xl">
+          Momayo's services are loved by 10
+          <span className="text-[#2D763A]">+</span> educational institutions.
         </h2>
+        <p className="text-[16px] leading-[20px] mb-8 max-w-3xl mx-auto text-center">
+          Momayo Technology has been providing different IT services to various
+          educational institutions. The services provided by Momayo include IT
+          Consultation, Educational Management Information System (EMIS) and
+          other ICT related solutions.
+        </p>
         <div className="grid grid-cols-4 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6">
           <a
             href="https://lbu.edu.np"
