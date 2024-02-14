@@ -17,7 +17,7 @@ import Link from "next/link";
 const footer = () => {
   return (
     <div>
-      <div className="bg-gray-100 py-16 px-16">
+      <div className="bg-gray-50 py-16 px-3 md:px-16">
         <div className="container mx-auto flex flex-col space-y-24 ">
           <div className="grid lg:grid-cols-3 gap-20">
             <div className="col-span-1 flex flex-row space-x-3">
@@ -148,7 +148,7 @@ const footer = () => {
         </div>
       </div>
 
-      <div className="py-8 container mx-auto flex flex-row justify-between">
+      <div className="py-8 px-2 container mx-auto flex justify-between flex-col-reverse items-center md:flex-row ">
         <p className="text-center w-full">
           © Copyright {new Date().getFullYear()}{" "}
           <Link href="https://momayo.com" className="text-[#F59323]">
@@ -156,7 +156,7 @@ const footer = () => {
           </Link>
           . All rights reserved.
         </p>
-        <div className="flex flex-row space-x-3">
+        <div className="flex flex-row space-x-3 mb-2 md:mb-0">
           <Link
             href="https://www.facebook.com/momayotech"
             className="text-gray-500 hover:text-gray-400 transition duration-300"

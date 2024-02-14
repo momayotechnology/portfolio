@@ -7,12 +7,11 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section className="min-h-[calc(100vh-100px)] flex items-center justify-center p-2">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between flex-col-reverse md:flex-row">
         <div>
-          <h1 className="text-[62px] font-semibold leading-[66px] lg:max-w-xl">
-            Momayo Tech
-            <br />
-            Makes Learning <br />
+          <h1 className="text-[28px] md:text-[62px] font-semibold leading-[30px] md:leading-[66px] lg:max-w-xl">
+            Momayo Tech <br className="hidden md:block" />
+            Makes Learning <br className="hidden md:block" />
             <TypeAnimation
               sequence={[
                 "Interactive.",
@@ -31,19 +30,19 @@ const Hero = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[20px] leading-[24px] mt-6">
+          <p className="text-[18px] leading-[22px] md:text-[20px] md:leading-[24px] mt-6">
             Momayo Technology is an Independent Software Company that provides
             you different IT services as per your requirement. We provide
             different services including Software and Application Development,
             ICT Consultancy Service and all other ICT related Solution.
           </p>
 
-          <button className="text-[#2D763A] text-[18px] hover:text-[#333] uppercase font-[600] hover:opacity-[.95] transition duration-300 py-3 rounded-md mt-4 flex items-center">
+          <button className="text-[#2D763A] text-[16px] md:text-[18px] hover:text-[#333] uppercase font-[600] hover:opacity-[.95] transition duration-300 py-3 rounded-md mt-4 flex items-center">
             Explore Our Services
             <FiChevronDown className="ml-1" />
           </button>
         </div>
-        <div className="min-w-[550px] h-[550px] overflow-hidden md:ml-8 rounded-bl-3xl lg:rounded-bl-[100px]">
+        <div className="my-4 w-full h-[300px] md:min-w-[550px] md:h-[550px] overflow-hidden md:ml-8 rounded-bl-3xl lg:rounded-bl-[100px]">
           <Image
             src="/assets/women-working-on-image.jpg"
             width={400}
