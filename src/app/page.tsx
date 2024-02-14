@@ -1,16 +1,17 @@
-import Image from "next/image";
+import Hero from "@/components/Hero";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center p-2">
-      {/* Site is under maintainence page*/}
+    <>
+      {/* Navbar */}
 
-      <div className="flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold">Momayo Technology Pvt. Ltd.</h1>
-        <p className="text-lg text-center">
-          We are currently under maintainence. We will be back soon.
-        </p>
-      </div>
-    </main>
+      <main className="flex flex-col items-center justify-center max-w-8xl">
+        <Hero />
+      </main>
+
+      {/* Footer */}
+      <Footer />
+    </>
   );
 }
