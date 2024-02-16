@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="min-h-[calc(100vh-100px)] flex items-center justify-center p-2">
+    <section className="min-h-[calc(100vh-100px)] flex items-center justify-center p-2 lg:px-0">
       <div className="flex items-center justify-between flex-col-reverse md:flex-row">
         <div>
           <h1 className="text-[28px] md:text-[62px] font-semibold leading-[30px] md:leading-[66px] lg:max-w-xl">
@@ -42,7 +42,8 @@ const Hero = () => {
             <FiChevronDown className="ml-1" />
           </button>
         </div>
-        <div className="my-4 w-full h-[300px] md:min-w-[550px] md:h-[550px] overflow-hidden md:ml-8 rounded-bl-3xl lg:rounded-bl-[100px]">
+
+        <div className="my-4 w-full h-[300px] md:min-w-[600px] md:h-[600px] overflow-hidden md:ml-8 rounded-bl-3xl lg:rounded-bl-[100px]">
           <Image
             src="/assets/women-working-on-image.jpg"
             width={400}

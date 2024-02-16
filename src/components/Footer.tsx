@@ -151,7 +151,10 @@ const footer = () => {
       <div className="py-8 px-2 container mx-auto flex justify-between flex-col-reverse items-center md:flex-row ">
         <p className="text-center w-full">
           © Copyright {new Date().getFullYear()}{" "}
-          <Link href="https://momayo.com" className="text-[#F59323]">
+          <Link
+            href="https://momayo.com"
+            className="text-[#2D763A] hover:underline"
+          >
             Momayo Technology Pvt. Ltd
           </Link>
           . All rights reserved.

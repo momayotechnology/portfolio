@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 
 const Customers = () => {
@@ -14,6 +15,7 @@ const Customers = () => {
           Consultation, Educational Management Information System (EMIS) and
           other ICT related solutions.
         </p>
+
         <div className="grid grid-cols-3 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6">
           <a
             href="https://lbu.edu.np"
