@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "Consulting 1",
+    "description": [
+      "You need to move faster. You have napkin sketches that need to be fleshed out and realized. You need to reinvent your business to compete.",
+      "We bring startup speed and agility, and enterprise quality and scale. We'd love to learn and share more."
+    ],
+    "image": "/assets/services/service-1.jpeg",
+    "cta_txt": "Order now",
+    "cta_link": "/consulting"
+  },
+  {
+    "id": 2,
+    "title": "Consulting 2",
+    "description": [
+      "You need to move faster. You have napkin sketches that need to be fleshed out and realized. You need to reinvent your business to compete.",
+      "We bring startup speed and agility, and enterprise quality and scale. We'd love to learn and share more."
+    ],
+    "image": "/assets/services/service-1.jpeg",
+    "cta_txt": "Order now",
+    "cta_link": "/consulting"
+  },
+  {
+    "id": 3,
+    "title": "Consulting 3",
+    "description": [
+      "You need to move faster. You have napkin sketches that need to be fleshed out and realized. You need to reinvent your business to compete.",
+      "We bring startup speed and agility, and enterprise quality and scale. We'd love to learn and share more."
+    ],
+    "image": "/assets/services/service-1.jpeg",
+    "cta_txt": "Order now",
+    "cta_link": "/consulting"
+  },
+  {
+    "id": 4,
+    "title": "Consulting 4",
+    "description": [
+      "You need to move faster. You have napkin sketches that need to be fleshed out and realized. You need to reinvent your business to compete.",
+      "We bring startup speed and agility, and enterprise quality and scale. We'd love to learn and share more."
+    ],
+    "image": "/assets/services/service-1.jpeg",
+    "cta_txt": "Order now",
+    "cta_link": "/consulting"
+  },
+  {
+    "id": 5,
+    "title": "Consulting 5",
+    "description": [
+      "You need to move faster. You have napkin sketches that need to be fleshed out and realized. You need to reinvent your business to compete.",
+      "We bring startup speed and agility, and enterprise quality and scale. We'd love to learn and share more."
+    ],
+    "image": "/assets/services/service-1.jpeg",
+    "cta_txt": "Order now",
+    "cta_link": "/consulting"
+  }
+]
