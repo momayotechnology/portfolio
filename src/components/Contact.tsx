@@ -23,7 +23,7 @@ function Contact() {
       <p className="text-[20px] font-light text-center mt-5">
         We are here to help you with any queries you have.
       </p>
-      <form onSubmit={handleSubmit} className="w-full max-w-5xl mx-auto">
+      <form onSubmit={handleSubmit} className="w-full max-w-5xl mx-auto px-2">
         {/* input box with label */}
 
         <div className="flex flex-col mt-5 w-full">
@@ -45,7 +45,7 @@ function Contact() {
           />
         </div>
 
-        <div className="flex mt-5 w-full gap-2">
+        <div className="flex flex-col md:flex-row mt-5 w-full gap-2">
           <div className="flex flex-col w-full">
             <label
               htmlFor="email"

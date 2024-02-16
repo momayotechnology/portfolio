@@ -20,11 +20,11 @@ export default function Home() {
           <Hero />
           <Customers />
         </div>
-        <div className="bg-[#FAFAFA] w-full py-10">
+        {/* <div className="bg-[#FAFAFA] w-full py-10">
           <div className="flex flex-col items-center justify-center max-w-6xl mx-auto my-10">
             <Testimonial />
           </div>
-        </div>
+        </div> */}
 
         <Services />
 
