@@ -138,7 +138,7 @@ const footer = () => {
                 />
                 <button
                   type="submit"
-                  className="text-white bg-[#2D763A] hover:opacity-[.9] focus:ring-4 focus:ring-[#E65625] font-medium w-full sm:w-auto px-5 py-2.5 text-center "
+                  className="text-white bg-[#2D763A] hover:bg-[#222] transition duration-300 focus:ring-4 focus:ring-[#E65625] font-medium w-full sm:w-auto px-5 py-2.5 text-center "
                 >
                   Submit
                 </button>

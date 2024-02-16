@@ -24,7 +24,7 @@ const Services = () => {
     <section
       ref={verticalTargetRef}
       id="services"
-      className="w-full min-h-[250vh] bg-[#000] p-4 py-10 mt-5"
+      className="w-full min-h-[250vh] bg-[#000] p-4 py-10"
     >
       <div className="sticky top-[125px] md:top-[140px]">
         <h1 className="text-2xl md:text-4xl lg:text-6xl text-[#2D763A] text-center uppercase font-semibold mt-8">

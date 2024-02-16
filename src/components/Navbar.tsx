@@ -35,11 +35,16 @@ const Navbar = () => {
           />
         </Link>
 
-        <Link href="/contact" passHref>
-          <button className="px-6 py-3 md:px-10 md:py-4 bg-[#2D763A] text-white hover:shadow-md transition duration-300">
-            Contact Us
-          </button>
-        </Link>
+        <button
+          onClick={() => {
+            document
+              .querySelector("#contact")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
+          className="px-6 py-3 md:px-10 md:py-4 bg-[#2D763A] text-white hover:shadow-md transition duration-300"
+        >
+          Contact Us
+        </button>
       </div>
     </nav>
   );
