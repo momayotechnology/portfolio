@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`flex items-center min-h-[100px] md:min-h-[115px] px-2 lg:px-0 sticky top-0 bg-[#fff] z-50 ${
+      className={`flex items-center min-h-[100px] md:min-h-[105px] px-2 lg:px-0 sticky top-0 bg-[#fff] z-50 ${
         hasShadow ? "shadow-md" : ""
       }`}
     >

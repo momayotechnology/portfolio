@@ -12,12 +12,11 @@ interface ServiceProps {
 
 const Service = ({ service }: { service: ServiceProps }) => {
   return (
-    <div className="overflow-hidden w-full h-[400px] md:min-w-[400px] md:w-[400px] lg:h-[550px] lf:min-w-[550px] lg:w-[550px] relative rounded-tr-[100px] flex justify-center">
+    <div className="overflow-hidden w-full h-[400px] md:min-w-[400px] md:w-[400px] lg:h-[550px] lg:min-w-[650px] lg:w-[650px] relative rounded-tr-[100px] flex justify-center">
       <Image
         src={service.image}
         width={400}
         height={400}
-        layout="responsive"
         alt="service"
         className="object-cover min-w-full min-h-full"
       />
@@ -45,7 +44,14 @@ const Service = ({ service }: { service: ServiceProps }) => {
               </p>
             ))}
 
-          <button className="text-[#2D763A] text-[14px] md:text-[16px] hover:text-[#fff] uppercase font-[600] hover:opacity-[.95] transition duration-300 rounded-md mt-2 mb-5 flex items-center">
+          <button
+            onClick={() => {
+              document
+                .querySelector("#contact")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="text-[#2D763A] text-[14px] md:text-[16px] hover:text-[#fff] uppercase font-[600] hover:opacity-[.95] transition duration-300 rounded-md mt-2 mb-5 flex items-center"
+          >
             {service.cta_txt}
             <FiArrowRight className="ml-1" />
           </button>

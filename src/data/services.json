@@ -1,56 +1,56 @@
 [
   {
     "id": 1,
-    "title": "Consulting 1",
+    "title": "Higher Education IT Consultation",
     "description": [
       "You need to move faster. You have napkin sketches that need to be fleshed out and realized. You need to reinvent your business to compete.",
       "We bring startup speed and agility, and enterprise quality and scale. We'd love to learn and share more."
     ],
-    "image": "/assets/services/service-1.jpeg",
+    "image": "/assets/services/service-1.jpg",
     "cta_txt": "Order now",
     "cta_link": "/consulting"
   },
   {
     "id": 2,
-    "title": "Consulting 2",
+    "title": "Custom Software Development",
     "description": [
       "You need to move faster. You have napkin sketches that need to be fleshed out and realized. You need to reinvent your business to compete.",
       "We bring startup speed and agility, and enterprise quality and scale. We'd love to learn and share more."
     ],
-    "image": "/assets/services/service-1.jpeg",
+    "image": "/assets/services/service-2.jpeg",
     "cta_txt": "Order now",
     "cta_link": "/consulting"
   },
   {
     "id": 3,
-    "title": "Consulting 3",
+    "title": "Cloud Consultation",
     "description": [
       "You need to move faster. You have napkin sketches that need to be fleshed out and realized. You need to reinvent your business to compete.",
       "We bring startup speed and agility, and enterprise quality and scale. We'd love to learn and share more."
     ],
-    "image": "/assets/services/service-1.jpeg",
+    "image": "/assets/services/service-3.jpg",
     "cta_txt": "Order now",
     "cta_link": "/consulting"
   },
   {
     "id": 4,
-    "title": "Consulting 4",
+    "title": "Google Workspace and Microsoft 365 Consultation",
     "description": [
       "You need to move faster. You have napkin sketches that need to be fleshed out and realized. You need to reinvent your business to compete.",
       "We bring startup speed and agility, and enterprise quality and scale. We'd love to learn and share more."
     ],
-    "image": "/assets/services/service-1.jpeg",
+    "image": "/assets/services/service-4.jpg",
     "cta_txt": "Order now",
     "cta_link": "/consulting"
   },
   {
     "id": 5,
-    "title": "Consulting 5",
+    "title": "Government Software Procurement Consultation",
     "description": [
       "You need to move faster. You have napkin sketches that need to be fleshed out and realized. You need to reinvent your business to compete.",
       "We bring startup speed and agility, and enterprise quality and scale. We'd love to learn and share more."
     ],
-    "image": "/assets/services/service-1.jpeg",
+    "image": "/assets/services/service-5.jpg",
     "cta_txt": "Order now",
     "cta_link": "/consulting"
   }
