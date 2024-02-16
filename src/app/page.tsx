@@ -16,7 +16,7 @@ export default function Home() {
       <Navbar />
 
       <main className="flex flex-col items-center justify-center">
-        <div className="flex flex-col items-center justify-center max-w-7xl mx-auto">
+        <div className="flex flex-col items-center justify-center max-w-7xl mx-auto mb-10">
           <Hero />
           <Customers />
         </div>

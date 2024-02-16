@@ -21,7 +21,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="w-full pt-16 mb-16 flex flex-col-reverse md:flex-row gap-6 items-center"
+      className="w-full pt-16 mb-16 flex flex-col-reverse md:flex-row gap-6 items-center px-2"
     >
       <div className="w-full md:w-4xl ">
         <h2 className="text-[36px] font-bold text-[#2D763A] text-left ">
@@ -30,7 +30,7 @@ function Contact() {
         <p className="text-[20px] font-light text-left">
           We are here to help you with any queries you have.
         </p>
-        <form onSubmit={handleSubmit} className="w-full mx-auto px-2">
+        <form onSubmit={handleSubmit} className="w-full mx-auto ">
           <div className="flex flex-col mt-5 w-full">
             <label
               htmlFor="name"
@@ -123,13 +123,13 @@ function Contact() {
         </form>
       </div>
 
-      <div className="min-w-[400px] h-full px-2 pt-6">
+      <div className="w-full md:min-w-[400px] h-full pt-6">
         <Image
           src="/assets/appointment.svg"
           width={250}
           height={250}
           alt="appointment"
-          className="object-contain w-auto h-auto min-w-[300px] max-w-[400px] max-h-[300px] mx-auto"
+          className="object-contain w-full h-auto min-w-[300px] max-w-[400px] max-h-[300px] mx-auto"
         />
 
         <div className="max-w-[500px]">
