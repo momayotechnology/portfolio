@@ -1,9 +1,29 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+  const [hasShadow, setHasShadow] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+      const shouldHaveShadow = scrollTop > 0;
+      setHasShadow(shouldHaveShadow);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="flex items-center min-h-[100px] md:min-h-[115px] shadow-md px-2 lg:px-0 sticky top-0 bg-[#fff] z-50">
+    <nav
+      className={`flex items-center min-h-[100px] md:min-h-[115px] px-2 lg:px-0 sticky top-0 bg-[#fff] z-50 ${
+        hasShadow ? "shadow-md" : ""
+      }`}
+    >
       <div className="flex items-center justify-between mx-auto max-w-7xl w-full">
         <Link href="/" passHref>
           <Image

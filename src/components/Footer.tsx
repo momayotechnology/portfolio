@@ -133,7 +133,7 @@ const footer = () => {
                   type="email"
                   id="email"
                   className="bg-gray-50 border border-[#2D763A] text-gray-900 focus:ring-[#E65625] focus:border-[#E65625] block w-full p-2.5"
-                  placeholder="name@example.com"
+                  placeholder="name@yourcompany.com"
                   required
                 />
                 <button

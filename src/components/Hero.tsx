@@ -9,7 +9,7 @@ const Hero = () => {
     <section className="min-h-[calc(100vh-100px)] flex items-center justify-center p-2 lg:px-0">
       <div className="flex items-center justify-between flex-col-reverse md:flex-row">
         <div>
-          <h1 className="text-[28px] md:text-[62px] font-semibold leading-[30px] md:leading-[66px] lg:max-w-xl">
+          <h1 className="text-[28px] md:text-[72px] font-semibold leading-[30px] md:leading-[75px] lg:max-w-xl">
             Momayo Tech <br className="hidden md:block" />
             Makes Learning <br className="hidden md:block" />
             <TypeAnimation
@@ -37,7 +37,14 @@ const Hero = () => {
             ICT Consultancy Service and all other ICT related Solution.
           </p>
 
-          <button className="text-[#2D763A] text-[16px] md:text-[18px] hover:text-[#333] uppercase font-[600] hover:opacity-[.95] transition duration-300 py-3 rounded-md mt-4 flex items-center">
+          <button
+            className="text-[#2D763A] text-[16px] md:text-[18px] hover:text-[#333] uppercase font-[600] hover:opacity-[.95] transition duration-300 py-3 rounded-md mt-4 flex items-center"
+            onClick={() => {
+              document
+                .querySelector("#services")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
             Explore Our Services
             <FiChevronDown className="ml-1" />
           </button>

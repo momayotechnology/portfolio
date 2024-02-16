@@ -15,6 +15,7 @@ const Services = () => {
 
   const { scrollYProgress } = useScroll({
     target: verticalTargetRef,
+    offset: [0, 0.85],
   });
 
   const x = useTransform(scrollYProgress, [0, 1], ["10%", "-85%"]); // Adjust the range and values here
@@ -22,6 +23,7 @@ const Services = () => {
   return (
     <section
       ref={verticalTargetRef}
+      id="services"
       className="w-full min-h-[250vh] bg-[#000] p-4 py-10 my-5"
     >
       <div className="sticky top-[125px] md:top-[140px]">
