@@ -13,9 +13,11 @@ export default function Home() {
       {/* Navbar */}
       <Navbar />
 
-      <main className="flex flex-col items-center justify-center max-w-7xl mx-auto">
-        <Hero />
-        <Customers />
+      <main className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center max-w-7xl mx-auto">
+          <Hero />
+          <Customers />
+        </div>
 
         <Services />
       </main>
