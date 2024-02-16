@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Lumbini Buddhist University",
+    "url": "https://lbu.edu.np",
+    "logo": "/assets/customers/lbu.webp"
+  },
+  {
+    "id": 2,
+    "name": "Rajarshi Janak University",
+    "url": "https://rju.edu.np/",
+    "logo": "/assets/customers/rju.png"
+  },
+  {
+    "id": 3,
+    "name": "Nabin Audhyogic Kadar Bahadur Rita Secondary School",
+    "url": "https://nabin.edu.np/",
+    "logo": "/assets/customers/nabin.png"
+  },
+  {
+    "id": 4,
+    "name": "Annapurna Secondary School/Model College",
+    "url": "https://annapurnabtl.edu.np",
+    "logo": "/assets/customers/annapurna.jpg"
+  },
+  {
+    "id": 5,
+    "name": "New Pinewood English Boarding School",
+    "url": "https://newpinewoodebs.edu.np/",
+    "logo": "/assets/customers/pinewood.png"
+  },
+  {
+    "id": 6,
+    "name": "Flaircode School of Bar Barista and Beverage Management",
+    "url": "https://flaircode.com.np/",
+    "logo": "/assets/customers/flaircode.jpg"
+  }
+]

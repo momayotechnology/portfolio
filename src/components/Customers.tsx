@@ -1,6 +1,27 @@
 "use client";
 import Image from "next/image";
 
+//data
+import customers from "@/data/customers.json";
+
+// framer motion thingish
+import { motion } from "framer-motion";
+
+const fadeInUpAnimationVariants = {
+  initial: {
+    opacity: 0,
+    y: 50,
+  },
+  animate: (index: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      delay: 0.1 * index,
+    },
+  }),
+};
+
 const Customers = () => {
   return (
     <section className="bg-white w-full">
@@ -17,81 +38,25 @@ const Customers = () => {
         </p>
 
         <div className="grid grid-cols-3 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6">
-          <a
-            href="https://lbu.edu.np"
-            className="flex justify-center items-center"
-            title="Lumbini Buddhist University"
-          >
-            <Image
-              src="/assets/customers/lbu.webp"
-              width={100}
-              height={100}
-              alt="LBU"
-            />
-          </a>
-          <a
-            href="https://rju.edu.np/"
-            className="flex justify-center items-center"
-            title="Rajarshi Janak University"
-          >
-            <Image
-              src="/assets/customers/rju.png"
-              width={100}
-              height={100}
-              alt="RJU"
-            />
-          </a>
-          <a
-            href="https://nabin.edu.np/"
-            className="flex justify-center items-center"
-            title="Nabin Audhyogic Kadar Bahadur Rita Secondary School"
-          >
-            <Image
-              src="/assets/customers/nabin.png"
-              width={100}
-              height={100}
-              alt="Nabin Audhyogic Kadar Bahadur Rita Secondary School "
-            />
-          </a>
-
-          <a
-            href="https://annapurnabtl.edu.np"
-            className="flex justify-center items-center"
-            title="Annapurna Secondary School/Model College"
-          >
-            <Image
-              src="/assets/customers/annapurna.jpg"
-              width={100}
-              height={100}
-              alt="Annapurna Secondary School/Model College"
-            />
-          </a>
-
-          <a
-            href="https://newpinewoodebs.edu.np/"
-            className="flex justify-center items-center"
-            title="New Pinewood English Boarding School"
-          >
-            <Image
-              src="/assets/customers/pinewood.png"
-              width={100}
-              height={100}
-              alt="New Pinewood English Boarding School "
-            />
-          </a>
-
-          <a
-            href="https://flaircode.com.np/"
-            className="flex justify-center items-center"
-            title="Flaircode School of Bar Barista and Beverage Management"
-          >
-            <Image
-              src="/assets/customers/flaircode.jpg"
-              width={100}
-              height={100}
-              alt="Flaircode School of Bar Barista and Beverage Management "
-            />
-          </a>
+          {customers.map((c, index) => (
+            <motion.a
+              key={c.id}
+              href={c.url}
+              title={c.name}
+              variants={fadeInUpAnimationVariants}
+              initial="initial"
+              whileInView="animate"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              viewport={{
+                once: true,
+              }}
+              custom={index}
+              className="flex justify-center items-center"
+            >
+              <Image src={c.logo} width={100} height={100} alt={c.name} />
+            </motion.a>
+          ))}
         </div>
       </div>
     </section>
