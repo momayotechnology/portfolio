@@ -18,7 +18,22 @@ const Services = () => {
     offset: [0.1, 0.85],
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["20%", "-230%"]); // Adjust the range and values here
+  // check the screen width
+
+  const isMobile = window.innerWidth < 768;
+
+  // initial and final position according to device width
+  let x: any;
+
+  if (isMobile) {
+    x = useTransform(scrollYProgress, [0, 1], ["20%", "-1850px"]);
+  } else {
+    x = useTransform(
+      scrollYProgress,
+      [0, 0.2, 0.4, 0.6, 0.8, 1],
+      ["25%", "-60%", "-100%", "-150%", "-200%", "-235%"]
+    );
+  }
 
   return (
     <section
@@ -27,13 +42,13 @@ const Services = () => {
       className="w-full min-h-[350vh] bg-[#000] p-4 py-10"
     >
       <div className="sticky top-[125px] md:top-[140px]">
-        <h1 className="text-2xl md:text-4xl lg:text-6xl text-[#2D763A] text-center uppercase font-semibold mt-8">
+        <h1 className="text-4xl lg:text-6xl text-[#2D763A] text-center uppercase font-semibold mt-16 lg:mt-8">
           Services
         </h1>
 
-        <div className="my-8 max-w-7xl mx-auto overflow-x-hidden">
+        <div className="mt-16 lg:my-8 max-w-7xl mx-auto overflow-x-hidden">
           <motion.div
-            className="flex gap-48 items-center flex-grow-1 flex-shrink-0 w-full"
+            className="flex gap-16 md:gap-48 flex-row items-center flex-grow-1 flex-shrink-0 w-full"
             style={{ x }}
           >
             {data.map((service) => (
