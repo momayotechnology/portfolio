@@ -23,7 +23,7 @@ We welcome contributions from the community to improve the Momayo Technology web
 
 ## Contact
 
-For any inquiries or assistance regarding the Momayo Technology website or services, please feel free to contact us at [contact@momayotech.com](mailto:info@momayo.com).
+For any inquiries or assistance regarding the Momayo Technology website or services, please feel free to contact us at [info@momayo.com](mailto:info@momayo.com).
 
 Thank you for visiting our repository!
 
