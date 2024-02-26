@@ -25,14 +25,13 @@ const Services = () => {
   // initial and final position according to device width
   let x: any;
 
+  const mobileNumbers = useTransform(scrollYProgress, [0, 1], ["20%", "-1850px"]);
+  const desktopNumbers =  useTransform(scrollYProgress, [0, 0.2, 0.4, 0.6, 0.8, 1], ["25%", "-60%", "-100%", "-150%", "-200%", "-235%"]);
+
   if (isMobile) {
-    x = useTransform(scrollYProgress, [0, 1], ["20%", "-1850px"]);
+    x = mobileNumbers;
   } else {
-    x = useTransform(
-      scrollYProgress,
-      [0, 0.2, 0.4, 0.6, 0.8, 1],
-      ["25%", "-60%", "-100%", "-150%", "-200%", "-235%"]
-    );
+    x = desktopNumbers;
   }
 
   return (
