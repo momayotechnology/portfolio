@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Customers from "@/components/Customers";
 import Services from "@/components/Services";
-import Testimonial from "@/components/Recommendation";
+// import Testimonial from "@/components/Recommendation";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 
