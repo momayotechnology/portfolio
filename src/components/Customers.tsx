@@ -27,7 +27,7 @@ const Customers = () => {
     <section className="bg-white w-full">
       <div className="py-8 lg:py-16 mx-auto max-w-7xl px-4">
         <h2 className="mb-4 text-[28px] md:text-[54px] font-extrabold tracking-tight leading-tight text-center text-gray-900:text-4xl">
-          Momayo's services are loved by 10
+          Momayo&apos;s services are loved by 10
           <span className="text-[#2D763A]">+</span> educational institutions.
         </h2>
         <p className="text-[15px] md:text-[16px] leading-[20px] mb-8 max-w-3xl mx-auto text-center">
