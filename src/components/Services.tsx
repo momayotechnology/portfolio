@@ -1,5 +1,5 @@
 "use client";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 
 // framer motion thing
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -12,27 +12,25 @@ import Service from "./Service";
 
 const Services = () => {
   const verticalTargetRef = useRef<HTMLElement>(null);
+  const [x, setX] = useState(null);
 
   const { scrollYProgress } = useScroll({
     target: verticalTargetRef,
     offset: [0.1, 0.85],
   });
 
+  useEffect(() => {
+
   // check the screen width
 
   const isMobile = window.innerWidth < 768;
 
-  // initial and final position according to device width
-  let x: any;
-
   const mobileNumbers = useTransform(scrollYProgress, [0, 1], ["20%", "-1850px"]);
   const desktopNumbers =  useTransform(scrollYProgress, [0, 0.2, 0.4, 0.6, 0.8, 1], ["25%", "-60%", "-100%", "-150%", "-200%", "-235%"]);
 
-  if (isMobile) {
-    x = mobileNumbers;
-  } else {
-    x = desktopNumbers;
-  }
+  isMobile ? setX(mobileNumbers) : setX(desktopNumbers)
+
+  }, [])
 
   return (
     <section
