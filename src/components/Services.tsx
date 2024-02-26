@@ -1,8 +1,8 @@
 "use client";
-import { useRef, useState, useEffect } from "react";
+import { useRef } from "react";
 
 // framer motion thing
-import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 // data
 import data from "@/data/services.json";

@@ -54,7 +54,7 @@ const Customers = () => {
               custom={index}
               className="flex justify-center items-center"
             >
-              <Image src={c.logo} width={100} height={100} alt={c.name} />
+              <img src={c.logo} width={100} height={100} alt={c.name} />
             </motion.a>
           ))}
         </div>

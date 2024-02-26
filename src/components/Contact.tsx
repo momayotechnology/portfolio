@@ -124,7 +124,7 @@ function Contact() {
       </div>
 
       <div className="w-full md:min-w-[400px] h-full pt-6">
-        <Image
+        <img
           src="/assets/appointment.svg"
           width={250}
           height={250}

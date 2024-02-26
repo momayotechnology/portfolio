@@ -13,7 +13,7 @@ interface ServiceProps {
 const Service = ({ service }: { service: ServiceProps }) => {
   return (
     <div className="overflow-hidden min-w-full min-h-[500px] md:min-w-[400px] md:w-[400px] lg:h-[550px] lg:min-w-[650px] lg:w-[650px] relative rounded-tr-[100px] flex justify-center">
-      <Image
+      <img
         src={service.image}
         width={400}
         height={400}
