@@ -2,7 +2,7 @@
 import { useRef, useState, useEffect } from "react";
 
 // framer motion thing
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
 
 // data
 import data from "@/data/services.json";
@@ -12,25 +12,29 @@ import Service from "./Service";
 
 const Services = () => {
   const verticalTargetRef = useRef<HTMLElement>(null);
-  const [x, setX] = useState(null);
 
   const { scrollYProgress } = useScroll({
     target: verticalTargetRef,
     offset: [0.1, 0.85],
   });
 
-  useEffect(() => {
+  const mobileNumbers = useTransform(
+    scrollYProgress,
+    [0, 1],
+    ["20%", "-1850px"]
+  );
 
-  // check the screen width
+  const desktopNumbers = useTransform(
+    scrollYProgress,
+    [0, 0.2, 0.4, 0.6, 0.8, 1],
+    ["25%", "-60%", "-100%", "-150%", "-200%", "-235%"]
+  );
 
-  const isMobile = window.innerWidth < 768;
+  let x: any;
 
-  const mobileNumbers = useTransform(scrollYProgress, [0, 1], ["20%", "-1850px"]);
-  const desktopNumbers =  useTransform(scrollYProgress, [0, 0.2, 0.4, 0.6, 0.8, 1], ["25%", "-60%", "-100%", "-150%", "-200%", "-235%"]);
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
 
-  isMobile ? setX(mobileNumbers) : setX(desktopNumbers)
-
-  }, [])
+  x = isMobile ? mobileNumbers : desktopNumbers;
 
   return (
     <section
