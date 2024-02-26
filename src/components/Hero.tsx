@@ -55,7 +55,6 @@ const Hero = () => {
             src="/assets/women_working_on_image.jpg"
             width={400}
             height={400}
-            layout="responsive"
             alt="Hero"
             className="object-cover min-w-full min-h-full"
           />
