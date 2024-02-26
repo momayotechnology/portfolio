@@ -52,7 +52,7 @@ const Hero = () => {
 
         <div className="my-4 w-full h-[300px] md:min-w-[600px] md:h-[600px] overflow-hidden md:ml-8 rounded-bl-3xl lg:rounded-bl-[100px]">
           <Image
-            src="/assets/women-working-on-image.jpg"
+            src="/assets/women_working_on_image.jpg"
             width={400}
             height={400}
             layout="responsive"

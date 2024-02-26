@@ -49,7 +49,7 @@ const footer = () => {
           <div className="grid lg:grid-cols-4 gap-8">
             <div className="col-span-1 space-y-8">
               <Image
-                src="/momayo-long-logo.png"
+                src="/momayo_long_logo.png"
                 width={175}
                 height={100}
                 alt="Logo"

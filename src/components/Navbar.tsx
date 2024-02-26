@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between mx-auto max-w-7xl w-full">
         <Link href="/" passHref>
           <Image
-            src="/momayo-long-logo.png"
+            src="/momayo_long_logo.png"
             alt="logo"
             width={150}
             height={100}
