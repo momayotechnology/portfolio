@@ -44,7 +44,9 @@ const Services = () => {
     >
       <div className="sticky top-[125px] md:top-[140px]">
         <h1 className="text-4xl lg:text-6xl text-[#2D763A] text-center uppercase font-semibold mt-16 lg:mt-8">
-          Services
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#F59323] to-[#2D763A]">
+            Services
+          </span>
         </h1>
 
         <div className="mt-16 lg:my-8 max-w-7xl mx-auto overflow-x-hidden">

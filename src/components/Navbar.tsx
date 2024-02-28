@@ -41,7 +41,7 @@ const Navbar = () => {
               .querySelector("#contact")
               ?.scrollIntoView({ behavior: "smooth" });
           }}
-          className="px-6 py-3 md:px-10 md:py-4 bg-[#2D763A] text-white hover:shadow-md transition duration-300"
+          className="px-6 py-3 md:px-10 md:py-4 bg-[#2D763A] text-white  hover:shadow-md hover:bg-[#333] transition duration-300"
         >
           Contact Us
         </button>
