@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.meetingButton:hover .meetingIcon {
+  transform: translateX(2px);
+}

@@ -1,11 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
-import { FiArrowRightCircle } from "react-icons/fi";
-import Link from "next/link";
+import { FiArrowRight } from "react-icons/fi";
+import CalendlyEmbed from "./CalendlyEmbed";
 
 function Contact() {
+  const [modelOpen, setModelOpen] = useState(false);
   const [values, setValues] = useState({
     name: "",
     email: "",
@@ -21,8 +21,16 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="w-full pt-16 mb-16 flex flex-col-reverse md:flex-row gap-6 items-center px-2"
+      className="w-full pt-24 mb-20 flex flex-col-reverse md:flex-col gap-6 items-center px-2"
     >
+      {modelOpen && (
+        <CalendlyEmbed
+          setModelOpen={setModelOpen}
+          url={
+            "https://calendly.com/momayo?hide_gdpr_banner=1&text_color=2D763A&primary_color=2d763a"
+          }
+        />
+      )}
       <div className="w-full md:w-4xl ">
         <h2 className="text-[36px] font-bold text-[#2D763A] text-left ">
           Get in touch
@@ -114,39 +122,24 @@ function Contact() {
             ></textarea>
           </div>
 
-          <button
-            type="submit"
-            className="bg-[#2D763A] text-white font-bold py-4 px-10 mt-5 hover:shadow-md hover:bg-[#222] transition-all duration-300 ease-in-out"
-          >
-            Send A Message
-          </button>
+          <div className="flex w-full justify-between items-center">
+            <button
+              type="submit"
+              className="bg-[#2D763A] text-white font-bold py-4 px-10 mt-5 hover:shadow-md hover:bg-[#222] transition-all duration-300 ease-in-out"
+            >
+              Send A Message
+            </button>
+
+            <button
+              onClick={() => setModelOpen(true)}
+              type="button"
+              className="meetingButton text-[#2D763A] font-bold px-2 mt-5 hover:text-[#222] transition-all duration-300 ease-in-out"
+            >
+              Schedule a Meeting{" "}
+              <FiArrowRight className="meetingIcon inline ml-[0.1rem] transition duration-300" />
+            </button>
+          </div>
         </form>
-      </div>
-
-      <div className="w-full md:min-w-[400px] h-full pt-6">
-        <img
-          src="/assets/appointment.svg"
-          width={250}
-          height={250}
-          alt="appointment"
-          className="object-contain w-full h-auto min-w-[300px] max-w-[400px] max-h-[300px] mx-auto"
-        />
-
-        <div className="max-w-[500px]">
-          <h2 className="text-[24px] font-semibold">Schedule a call</h2>
-          <p className="text-[16px] font-light mt-1 mb-2">
-            We are here to help you with any queries you have. Book a 1:1 call
-            to discuss your project in-depth with our team.
-          </p>
-          <Link
-            href="https://calendly.com/momayo/30min"
-            target="_blank"
-            className="font-semibold mt-10 text-[#2D763A] hover:text-[#222] transition-all duration-300 ease-in-out"
-          >
-            Book Now
-            <FiArrowRightCircle className="inline ml-1" />
-          </Link>
-        </div>
       </div>
     </section>
   );
