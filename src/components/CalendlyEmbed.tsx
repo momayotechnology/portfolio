@@ -17,7 +17,9 @@ const CalendlyEmbed = ({
       "src",
       "https://assets.calendly.com/assets/external/widget.js"
     );
-    head.appendChild(script);
+    if (head) {
+      head.appendChild(script);
+    }
   }, []);
 
   useEffect(() => {
