@@ -27,7 +27,7 @@ function Contact() {
         <CalendlyEmbed
           setModelOpen={setModelOpen}
           url={
-            "https://calendly.com/momayo?hide_gdpr_banner=1&text_color=2D763A&primary_color=2d763a"
+            "https://calendly.com/momayo/inquire?hide_gdpr_banner=1&text_color=2D763A&primary_color=2d763a"
           }
         />
       )}
