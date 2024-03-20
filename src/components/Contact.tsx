@@ -67,7 +67,12 @@ function Contact() {
         <p className="text-[20px] font-light text-left">
           We are here to help you with any queries you have.
         </p>
-        <form onSubmit={handleSubmit} className="w-full mx-auto ">
+        <form
+          // onSubmit={handleSubmit}
+          className="w-full mx-auto pageclip-form"
+          action="https://send.pageclip.co/gMqFFoutm5KNKzV4bCXcVeB5V7uCrOuO"
+          method="post"
+        >
           <div className="flex flex-col mt-5 w-full">
             <label
               htmlFor="name"
