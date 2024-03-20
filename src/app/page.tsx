@@ -8,6 +8,7 @@ import Services from "@/components/Services";
 // import Testimonial from "@/components/Recommendation";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
+import { Toaster } from "react-hot-toast";
 
 export default function Home() {
   return (
@@ -30,6 +31,19 @@ export default function Home() {
 
         <div className="w-full max-w-7xl mx-auto">
           <Contact />
+          <Toaster
+            position="bottom-right"
+            reverseOrder={false}
+            gutter={8}
+            toastOptions={{
+              duration: 5000,
+              style: {
+                background: "#363636",
+                color: "#fff",
+                fontSize: "16px",
+              },
+            }}
+          />
         </div>
       </main>
 

@@ -1,8 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { FiArrowRight } from "react-icons/fi";
 import CalendlyEmbed from "./CalendlyEmbed";
+
+// icons
+import { FiArrowRight } from "react-icons/fi";
+
+// toast
+import toast from "react-hot-toast";
 
 function Contact() {
   const [modelOpen, setModelOpen] = useState(false);
@@ -13,9 +18,33 @@ function Contact() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form submitted");
+
+    try {
+      // send the data to the server
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+
+      // clear the input fields
+      setValues({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+
+      // show the success message
+      toast.success("Message sent successfully");
+    } catch (e) {
+      console.log(e);
+      toast.error("Failed to send the message");
+    }
   };
 
   return (
